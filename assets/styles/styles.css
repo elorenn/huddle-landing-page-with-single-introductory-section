@@ -1,0 +1,60 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --font-1: "Open Sans", sans-serif;
+  --font-2: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  /* line-height: 1.5rem; */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  color: var(--white);
+  background-color: var(--violet);
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
+  font-family: var(--font-1);
+  font-weight: 400;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: min-content;
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.55);
+}
+
+.attribution a {
+  font-size: 11px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media (min-width: 450px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-position: center;
+    background-size: auto 100%;
+  }
+}
