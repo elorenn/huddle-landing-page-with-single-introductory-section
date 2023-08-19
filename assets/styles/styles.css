@@ -8,7 +8,6 @@
 
 * {
   box-sizing: border-box;
-  /* line-height: 1.5rem; */
 }
 
 body {
@@ -39,6 +38,12 @@ header img {
 h1 {
   font-weight: 600;
   font-family: var(--font-2);
+  text-wrap: nowrap;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 20px;
 }
 
 header {
@@ -96,9 +101,10 @@ img.mockups {
 
 button {
   font-family: var(--font-2);
+  font-size: 16px;
   color: var(--violet);
-  width: 225px;
-  height: 45px;
+  width: 227px;
+  height: 47px;
   border-radius: 50px;
   border: 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -141,6 +147,16 @@ footer {
       "header header"
       "image text"
       "social social";
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  button {
+    font-size: 20px;
+    width: 200px;
+    height: 57px;
   }
 
   img.mockups {
