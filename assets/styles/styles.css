@@ -26,9 +26,15 @@ body {
   min-width: 100vw;
   width: min-content;
   margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "image text"
+    "social social";
+}
+
+header img {
+  height: 32px;
 }
 
 h1 {
@@ -36,16 +42,30 @@ h1 {
   font-family: var(--font-2);
 }
 
-header,
-.social {
-  flex-basis: 100%;
+header {
+  grid-area: header;
+}
+
+.img-wrapper {
+  grid-area: image;
+}
+
+section {
+  grid-area: text;
 }
 
 .social {
+  grid-area: social;
   text-align: end;
 }
 
+header,
+.social {
+  border: 2px solid greenyellow;
+}
+
 .social .fa-brands {
+  display: inline-block;
   border: 2px solid var(--white);
   border-radius: 50%;
   font-size: 20px;
@@ -54,6 +74,7 @@ header,
   line-height: 30px;
   text-align: center;
   cursor: pointer;
+  margin: 0 0.5rem;
 }
 
 .social .fa-brands:hover,
@@ -63,9 +84,16 @@ header,
   border-color: var(--soft-magenta);
 }
 
+.img-wrapper,
+section {
+  max-width: 50vw;
+  border: 2px solid greenyellow;
+}
+
 img.mockups {
-  width: 333px;
-  height: 235px;
+  /* width: 333px;
+  height: 235px; */
+  width: 100%;
 }
 
 button {
@@ -111,11 +139,10 @@ footer {
     background-image: url("../images/bg-desktop.svg");
     background-position: center;
     background-size: auto 100%;
-    flex-direction: row;
   }
 
   img.mockups {
-    width: 694px;
-    height: 494px;
+    /* width: 694px;
+    height: 494px; */
   }
 }
