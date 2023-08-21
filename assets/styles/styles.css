@@ -12,7 +12,9 @@
 
 body {
   -webkit-font-smoothing: antialiased;
+  text-align: center;
   margin: 0;
+  padding: 45px 45px 0px;
   color: var(--white);
   background-color: var(--violet);
   background-image: url("../images/bg-mobile.svg");
@@ -23,6 +25,7 @@ body {
   font-weight: 400;
   min-height: 100vh;
   min-width: 100vw;
+  overflow: scroll;
   display: grid;
   grid-template-areas:
     "header"
@@ -44,6 +47,12 @@ p {
 
 header {
   grid-area: header;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+header img {
+  height: 35px;
 }
 
 .img-wrapper {
@@ -56,7 +65,8 @@ section {
 
 .social {
   grid-area: social;
-  text-align: end;
+  text-align: center;
+  margin: 51px 0;
 }
 
 header,
@@ -66,16 +76,15 @@ header,
 
 .social .fa-brands {
   display: inline-block;
-  border: 2px solid var(--white);
+  border: 1px solid var(--white);
   color: #fff;
   border-radius: 50%;
-  font-size: 20px;
-  width: 42px;
-  height: 42px;
-  line-height: 30px;
+  width: 32px;
+  height: 32px;
+  line-height: 23px;
   text-align: center;
   cursor: pointer;
-  margin-left: 18px;
+  margin: 0 5px;
 }
 
 .social .fa-brands:hover,
@@ -136,8 +145,16 @@ footer {
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-@media (min-width: 450px) {
+@media (max-width: 350px) {
   body {
+    padding: 3vw 3vw 0px;
+  }
+}
+
+@media (min-width: 821px) {
+  body {
+    padding: 0;
+    text-align: start;
     background-image: url("../images/bg-desktop.svg");
     background-position: center;
     background-size: auto 100%;
@@ -149,9 +166,20 @@ footer {
 
   .social {
     margin-right: 78px;
+    text-align: end;
+  }
+
+  .social .fa-brands {
+    border-width: 2px;
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    line-height: 30px;
+    margin-left: 18px;
   }
 
   header img {
+    height: auto;
     padding-top: 60px;
     padding-left: 78px;
   }
