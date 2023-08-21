@@ -31,10 +31,6 @@ body {
     "social";
 }
 
-header img {
-  height: 32px;
-}
-
 h1 {
   font-weight: 600;
   font-family: var(--font-2);
@@ -65,12 +61,13 @@ section {
 
 header,
 .social {
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
 }
 
 .social .fa-brands {
   display: inline-block;
   border: 2px solid var(--white);
+  color: #fff;
   border-radius: 50%;
   font-size: 20px;
   width: 42px;
@@ -78,7 +75,7 @@ header,
   line-height: 30px;
   text-align: center;
   cursor: pointer;
-  margin: 0 0.5rem;
+  margin-left: 18px;
 }
 
 .social .fa-brands:hover,
@@ -90,7 +87,7 @@ header,
 
 .img-wrapper,
 section {
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
 }
 
 img.mockups {
@@ -128,6 +125,7 @@ footer {
 }
 
 .attribution {
+  margin: auto;
   font-size: 11px;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.55);
@@ -147,6 +145,25 @@ footer {
       "header header"
       "image text"
       "social social";
+  }
+
+  .social {
+    margin-right: 78px;
+  }
+
+  header img {
+    padding-top: 60px;
+    padding-left: 78px;
+  }
+
+  img.mockups {
+    padding-right: 50px;
+    padding-left: 78px;
+  }
+
+  h1,
+  p {
+    max-width: 512px;
   }
 
   h1 {
