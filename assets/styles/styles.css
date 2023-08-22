@@ -59,7 +59,7 @@ header img {
   grid-area: image;
 }
 
-section {
+main {
   grid-area: text;
 }
 
@@ -92,11 +92,6 @@ header,
 .social .fa-brands:active {
   color: var(--soft-magenta);
   border-color: var(--soft-magenta);
-}
-
-.img-wrapper,
-section {
-  /* border: 2px solid greenyellow; */
 }
 
 img.mockups {
