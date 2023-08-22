@@ -69,11 +69,6 @@ main {
   margin: 51px 0;
 }
 
-header,
-.social {
-  /* border: 2px solid greenyellow; */
-}
-
 .social .fa-brands {
   display: inline-block;
   border: 1px solid var(--white);
@@ -95,8 +90,6 @@ header,
 }
 
 img.mockups {
-  /* width: 333px;
-  height: 235px; */
   width: 100%;
 }
 
@@ -199,8 +192,4 @@ footer {
     height: 57px;
   }
 
-  img.mockups {
-    /* width: 694px;
-    height: 494px; */
-  }
 }
